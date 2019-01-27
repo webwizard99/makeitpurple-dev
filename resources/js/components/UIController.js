@@ -1,6 +1,6 @@
 const UIController = (function(){
   const DOMStrings = {
-    main: 'mainContainer'
+    main: '#mainContainer'
   }
 
   return {

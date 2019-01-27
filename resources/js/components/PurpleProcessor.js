@@ -1,12 +1,18 @@
 const PurpleProssessor = (function(){
+  const myVariable = 5;
+  
   return {
-    purlifyThePs: function(pNodeList) {
-      let itInstances = Array.from(pNodeList).map(pNode => {
+    purplifyThePs: function(pNodeList) {
+      let itInstances = Array.from(pNodeList);
+      console.log(itInstances);
+      let itsPurple = itInstances.map(pNode => {
         const purpleIt = `<span class="purpleIt">it</span>`;
-        let purpleNode = pNode.innerHtml.replace(/it/g, purpleIt, 'g');
+        console.log(pNode.innerHTML);
+        let purpleNode = pNode.innerHTML.replace(/it/g, purpleIt, 'g');
+        console.log(purpleNode);
         return purpleNode;
       });
-      return itInstances;
+      return itsPurple;
     },
     
     test: function() {

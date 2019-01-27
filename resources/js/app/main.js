@@ -1,3 +1,5 @@
-import Controller from '../components/Controller';
+import Controller from '../components/Controller.js';
+
 
 Controller.test();
+Controller.makePurplePs();

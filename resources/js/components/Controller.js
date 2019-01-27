@@ -1,12 +1,12 @@
-import PurpleProcessor from './PurpleProcessor';
-import UIController from './UIController';
+import PurpleProcessor from './PurpleProcessor.js';
+import UIController from './UIController.js';
 
 const Controller = (function(purplProcssr, UICtrl){
   
   return {
     makePurplePs: function() {
       const thePs = UICtrl.getAllPs();
-      const purplePs = purplProcssr.purlifyThePs(thePs);
+      const purplePs = purplProcssr.purplifyThePs(thePs);
       UICtrl.setPurplePs(purplePs);
     },
     
